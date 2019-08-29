@@ -6,7 +6,7 @@ Kernels
  - Compilation into comparable JSON
 
 Modules
-  - Language Agnostic
+  - Language agnostic
   - Definitions
   - Kernel configurations
 
