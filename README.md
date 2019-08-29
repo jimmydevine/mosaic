@@ -1,6 +1,4 @@
-# mosaic
-
-Mosaic
+# Mosaic
 
 Runtime
 
