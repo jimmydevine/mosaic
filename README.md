@@ -7,6 +7,8 @@ Kernels
 
 Modules
   - Language Agnostic
+  - Definitions
+  - Kernel configurations
 
 Language
 
