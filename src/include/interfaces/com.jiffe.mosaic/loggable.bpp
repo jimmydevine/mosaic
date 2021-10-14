@@ -1,0 +1,89 @@
+#pragma once
+
+
+#include "global.hpp"
+
+
+/***********************************************************************************************************************************
+* 
+*
+***********************************************************************************************************************************/
+namespace Mosaic { /* loggable base definition */
+    
+    
+    /**********************************************************************************************************************************
+    * 
+    *
+    **********************************************************************************************************************************/
+    class _LoggableConfig {
+        public:
+            /********************************************************************************************************************************
+            * 
+            *
+            ********************************************************************************************************************************/
+            _LoggableConfig() {
+            }
+    };
+
+
+}
+
+
+extern JSON moddefLoggable;
+extern "C" JSON getLoggableJSONDefinition();
+
+
+#ifdef _MODULE_SOURCEFILE_LOGGABLE
+
+
+JSON moddefLoggable = JSON::parse(R"~~~({
+    "name": "Loggable",
+    "type": "interface",
+    "description": "Interface for logging",
+    "imports": [ ],
+    "config": {
+        "attributes": {
+        
+        },
+        "functions": [
+			{
+				"definition": "void open()",
+				"description": "Returns a DateTime structure filled with what is expected to be the current date and time",
+				"type": "virtual",
+                "default": "No action"
+			},
+            {
+				"definition": "void close()",
+				"description": "Returns what is expected to be the current CDC",
+				"type": "virtual",
+                "default": "No action"
+			},
+            {
+				"definition": "void write(const std::string &msg)",
+				"description": "Write log entry",
+				"type": "pure"
+			}
+        ],
+        "implements": [ ],
+        "interfaces": [ ]
+    }
+})~~~");
+
+
+
+
+/***********************************************************************************************************************************
+* 
+*
+***********************************************************************************************************************************/
+extern "C" JSON getLoggableJSONDefinition() {
+    JSON moddef;
+    moddef["module"] = moddefLoggable;
+    moddef["implements"] = {  };
+    moddef["interfaces"] = {  };
+    return moddef;
+}
+
+
+#endif
+

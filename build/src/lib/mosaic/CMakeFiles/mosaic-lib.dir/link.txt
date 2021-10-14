@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmosaic.a  CMakeFiles/mosaic-lib.dir/mosaic.cpp.o CMakeFiles/mosaic-lib.dir/loggable.cpp.o
+/usr/bin/ranlib libmosaic.a

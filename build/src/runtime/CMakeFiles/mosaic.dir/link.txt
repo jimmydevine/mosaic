@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mosaic.dir/mosaic.cpp.o CMakeFiles/mosaic.dir/options.cpp.o CMakeFiles/mosaic.dir/modules.cpp.o CMakeFiles/mosaic.dir/importable.cpp.o  -o mosaic  /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 ../lib/mosaic/libmosaic.a -ldl -lbfd 

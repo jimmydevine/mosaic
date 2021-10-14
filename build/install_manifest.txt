@@ -1,0 +1,4 @@
+/home/jiffe/.local/include/backward.hpp
+/home/jiffe/.local/lib/backward/BackwardConfig.cmake
+/home/jiffe/.local/lib/libmosaic.a
+/home/jiffe/.local/bin/mosaic
