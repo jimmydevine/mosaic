@@ -18,8 +18,8 @@ Flow
 
 ```mermaid
 graph TD;
-    Progam Start-->Parse Command Line Options'
-    Parse Command Line Option-->Load System Configuration;s
+    "Progam Start"-->"Parse Command Line Options"'
+    "Parse Command Line Options"-->"Load System Configurations";
     Load System Configuration-->Load Engine;
     Load Engine-->Load Program Configuration;
     Load Program Configuration-->Load Program Data'
