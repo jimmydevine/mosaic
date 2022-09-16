@@ -19,4 +19,9 @@ Flow
 ```mermaid
 graph TD;
     ProgamStart-->ParseCommandLineOptions;
+    ParseCommandLineOptions-->LoadSystemConfiguration;
+    LoadSystemConfiguration-->LoadEngine;
+    LoadEngine-->LoadProgramConfiguration;
+    LoadProgramConfiguration-->LoadProgramData'
+    LoadProgramData-->RunProgram;
 ```
