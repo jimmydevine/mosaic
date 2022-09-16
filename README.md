@@ -18,5 +18,5 @@ Flow
 
 ```mermaid
 graph TD;
-    "Progam Start"-->"Parse Command Line Options";
+    ProgamStart-->ParseCommandLineOptions;
 ```
