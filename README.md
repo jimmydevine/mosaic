@@ -22,6 +22,6 @@ graph TD;
     ParseCommandLineOptions-->LoadSystemConfiguration;
     LoadSystemConfiguration-->LoadEngine;
     LoadEngine-->LoadProgramConfiguration;
-    LoadProgramConfiguration-->LoadProgramData'
+    LoadProgramConfiguration-->LoadProgramData;
     LoadProgramData-->RunProgram;
 ```
